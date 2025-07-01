@@ -1,0 +1,31 @@
+{
+  "name": "cookie-consent-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for CookieGuard - GDPR Compliant Cookie Consent System",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 5500 -c-1",
+    "dev": "npx live-server --port=5500",
+    "build": "echo 'No build process needed for static files'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "cookie",
+    "consent",
+    "gdpr",
+    "privacy",
+    "frontend",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "CookieGuard Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

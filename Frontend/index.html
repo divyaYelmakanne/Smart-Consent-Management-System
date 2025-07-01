@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent Manager - Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>CookieGuard</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn-secondary" id="login-btn">Login</button>
+                    <button class="btn-outline responsive-btn" id="create-anon-id-btn"><i class="fas fa-user-secret"></i> Create Anonymous ID</button>
+                    <button class="btn-primary responsive-btn" id="get-started-btn">Get Started</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>A-Smart-Consent-Management-System</h1>
+                <p>Protect your website and respect user privacy with our comprehensive cookie consent management solution. Easy to implement, fully customizable, and legally compliant.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large responsive-hero-btn" id="try-demo-btn">Try Demo</button>
+                    <button class="btn-outline btn-large responsive-hero-btn" id="view-docs-btn">View Documentation</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="demo-widget">
+                    <div class="widget-header">
+                        <i class="fas fa-cookie-bite"></i>
+                        <span>Cookie Preferences</span>
+                    </div>
+                    <div class="widget-content">
+                        <p>We use cookies to enhance your browsing experience and analyze our traffic.</p>
+                        <div class="cookie-types">
+                            <div class="cookie-type">
+                                <label class="switch">
+                                    <input type="checkbox" checked disabled>
+                                    <span class="slider"></span>
+                                </label>
+                                <span>Essential Cookies</span>
+                            </div>
+                            <div class="cookie-type">
+                                <label class="switch">
+                                    <input type="checkbox" id="analytics-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <span>Analytics Cookies</span>
+                            </div>
+                            <div class="cookie-type">
+                                <label class="switch">
+                                    <input type="checkbox" id="marketing-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <span>Marketing Cookies</span>
+                            </div>
+                            <div class="cookie-type">
+                                <label class="switch">
+                                    <input type="checkbox" id="performance-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <span>Performance Cookies</span>
+                            </div>
+                            <div class="cookie-type">
+                                <label class="switch">
+                                    <input type="checkbox" id="targeting-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <span>Targeting Cookies</span>
+                            </div>
+                            <div class="cookie-type">
+                                <label class="switch">
+                                    <input type="checkbox" id="functional-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <span>Functional Cookies</span>
+                            </div>
+                        </div>
+                        <div class="widget-buttons">
+                            <button class="btn-accept-all">Accept All</button>
+                            <button class="btn-save-preferences">Save Preferences</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why Choose Our Cookie Consent Solution?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>GDPR Compliant</h3>
+                    <p>Full compliance with GDPR, CCPA, and other privacy regulations worldwide.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Customizable Design</h3>
+                    <p>Match your brand with fully customizable colors, fonts, and layouts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Track consent rates, user preferences, and compliance metrics in real-time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Easy Integration</h3>
+                    <p>Simple one-line code integration with support for all major platforms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Responsive</h3>
+                    <p>Perfect display and functionality across all devices and screen sizes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support to help you with any questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2>Live Demo</h2>
+            <p>Experience our cookie consent widget in action. Click the buttons below to see different consent scenarios.</p>
+            <div class="demo-controls">
+                <button class="btn-demo responsive-demo-btn" onclick="showConsentBanner()">Show Consent Banner</button>
+                <button class="btn-demo responsive-demo-btn" onclick="showPreferencesModal()">Open Preferences</button>
+                <button class="btn-demo responsive-demo-btn" onclick="resetConsent()">Reset Consent</button>
+            </div>
+            <div class="demo-info">
+                <p><strong>What does "Show Consent Banner" do?</strong><br>
+                This button displays the cookie consent banner at the bottom of the page, allowing users to accept all cookies or customize their preferences. The banner is fully responsive and ensures your site is compliant with privacy regulations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h4><i class="fas fa-cookie-bite"></i> We value your privacy</h4>
+                <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+            </div>
+            <div class="banner-buttons">
+                <button class="btn-secondary" onclick="showPreferencesModal()">Customize</button>
+                <button class="btn-primary" onclick="acceptAllCookies()">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preferences Modal -->
+    <div id="preferences-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-cog"></i> Cookie Preferences</h3>
+                <button class="modal-close" onclick="closePreferencesModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Manage your cookie preferences below. You can change these settings at any time.</p>
+                
+                <div class="cookie-category">
+                    <div class="category-header">
+                        <div class="category-info">
+                            <h4>Essential Cookies</h4>
+                            <p>These cookies are necessary for the website to function properly.</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked disabled>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="category-header">
+                        <div class="category-info">
+                            <h4>Analytics Cookies</h4>
+                            <p>These cookies help us understand how visitors interact with our website.</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="analytics-modal-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="category-header">
+                        <div class="category-info">
+                            <h4>Marketing Cookies</h4>
+                            <p>These cookies are used to deliver personalized advertisements.</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="marketing-modal-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="category-header">
+                        <div class="category-info">
+                            <h4>Performance Cookies</h4>
+                            <p>These cookies improve the performance and speed of the website.</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="performance-modal-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="category-header">
+                        <div class="category-info">
+                            <h4>Targeting Cookies</h4>
+                            <p>These cookies are used to deliver relevant ads and measure campaign effectiveness.</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="targeting-modal-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="category-header">
+                        <div class="category-info">
+                            <h4>Functional Cookies</h4>
+                            <p>These cookies enable enhanced functionality and personalization.</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="functional-modal-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closePreferencesModal()">Cancel</button>
+                <button class="btn-primary" onclick="savePreferences()">Save Preferences</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content login-modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-sign-in-alt"></i> Login</h3>
+                <button class="modal-close" onclick="closeLoginModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form class="modal-body login-form" onsubmit="submitLogin(event)">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="email" placeholder="Enter your email" autocomplete="username">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" placeholder="Enter your password" autocomplete="current-password">
+                <div class="anonymous-login">
+                    <input type="checkbox" id="anonymous-login-checkbox" name="anonymous">
+                    <label for="anonymous-login-checkbox">Login as Anonymous (random ID)</label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary" onclick="closeLoginModal()">Cancel</button>
+                    <button type="submit" class="btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <p class="price">$0<span>/mo</span></p>
+                    <ul>
+                        <li>Basic Cookie Banner</li>
+                        <li>Essential Consent Only</li>
+                        <li>Email Support</li>
+                    </ul>
+                    <button class="btn-primary" id="pricing-get-started-btn"><i class="fas fa-rocket"></i>Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Pro</h3>
+                    <p class="price">$9<span>/mo</span></p>
+                    <ul>
+                        <li>All Free Features</li>
+                        <li>Analytics & Marketing Consent</li>
+                        <li>Dashboard Access</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <button class="btn-primary" id="pricing-free-trial-btn"><i class="fas fa-gift"></i>Start Free Trial</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <p class="price">Custom</p>
+                    <ul>
+                        <li>All Pro Features</li>
+                        <li>Custom Integrations</li>
+                        <li>Dedicated Manager</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <button class="btn-primary" id="pricing-contact-sales-btn"><i class="fas fa-handshake"></i>Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CookieGuard</h4>
+                    <p>Making cookie consent simple, compliant, and user-friendly.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CookieGuard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pricing Modals -->
+    <div id="pricing-modal-get-started" class="pricing-modal">
+        <div class="pricing-modal-content">
+            <button class="modal-close" onclick="closePricingModal('get-started')"><i class="fas fa-times"></i></button>
+            <h3>Get Started - Free Plan</h3>
+            <p>Thank you for choosing the Free plan! You can start using the basic cookie banner and essential consent features right away. For more features, upgrade anytime.</p>
+            <button class="btn-primary" onclick="closePricingModal('get-started')">Continue</button>
+        </div>
+    </div>
+    <div id="pricing-modal-free-trial" class="pricing-modal">
+        <div class="pricing-modal-content">
+            <button class="modal-close" onclick="closePricingModal('free-trial')"><i class="fas fa-times"></i></button>
+            <h3>Start Free Trial - Pro Plan</h3>
+            <p>Enjoy all Pro features free for 14 days! No credit card required. Experience analytics, marketing consent, dashboard access, and more.</p>
+            <button class="btn-primary" onclick="closePricingModal('free-trial')">Start Trial</button>
+        </div>
+    </div>
+    <div id="pricing-modal-contact-sales" class="pricing-modal">
+        <div class="pricing-modal-content">
+            <button class="modal-close" onclick="closePricingModal('contact-sales')"><i class="fas fa-times"></i></button>
+            <h3>Contact Sales - Enterprise</h3>
+            <p>Our team will reach out to discuss your custom requirements and provide a tailored solution. Please use the contact form below or email us directly.</p>
+            <button class="btn-primary" onclick="closePricingModal('contact-sales')">Close</button>
+        </div>
+    </div>
+
+    <!-- Anonymous ID Modal -->
+    <div id="anon-id-modal" class="modal hidden">
+        <div class="modal-content anon-id-modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-secret"></i> Your Anonymous ID</h3>
+                <button class="modal-close" onclick="closeAnonIdModal()" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Your unique anonymous ID is:</p>
+                <div class="anon-id-display" id="anon-id-display"></div>
+                <p class="anon-id-info">This ID can be used to interact with the system without revealing your personal information. You can use it for demo, privacy, or testing purposes.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
