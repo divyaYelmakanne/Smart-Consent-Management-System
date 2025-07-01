@@ -1,0 +1,27 @@
+In PowerShell
+
+open new Terminal, do Backend
+
+
+BACKEND : 
+
+-> cd C:\Users\DELL\OneDrive\Desktop\CONSET\Frontend
+
+-> npm install
+
+-> npm start
+
+
+open new Terminal start executing Frontend
+
+
+FRONTEND : 
+
+-> cd C:\Users\DELL\OneDrive\Desktop\CONSET\Backend
+
+-> npm install
+
+-> npm start
+
+
+it will give a web address open it in browser
